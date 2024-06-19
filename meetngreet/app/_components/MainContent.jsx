@@ -7,13 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carous
 
 function MainContent() {
   return (
-    <div className='flex flex-col justify-center items-center my-20 bg-gradient-to-r from-blue-500 to-teal-400 py-10 rounded-lg shadow-lg'>
-      <div className='hidden lg:block relative'>
-        <Image src='/profile1.png' width={100} height={100} className='h-[100px] object-cover rounded-full absolute right-36 shadow-md'/>
-        <Image src='/profile3.png' width={100} height={100} className='h-[100px] object-cover rounded-full absolute top-48 left-16 shadow-md'/>
-        <Image src='/profile2.png' width={100} height={100} className='h-[100px] object-cover rounded-full absolute bottom-20 left-36 shadow-md'/>
-        <Image src='/profile2.png' width={100} height={100} className='h-[100px] object-cover rounded-full absolute right-16 bottom-32 shadow-md'/>
-      </div>
+    <div className='flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-teal-400 py-10 rounded-lg shadow-lg'>
       <div className='text-center max-w-3xl'>
         <h2 className='font-bold text-[60px] text-white fadeInUp'>Effortless Scheduling Awaits</h2>
         <h2 className='text-xl mt-5 text-gray-200 fadeInUp'>MeetnGreet revolutionizes scheduling by automating the entire process, saving you from endless email exchanges to find the ideal meeting time — and bringing additional powerful features to enhance your planning.</h2>
@@ -33,7 +27,7 @@ function MainContent() {
           </LoginLink> 
         </div>
       </div>
-      <div className='w-full mt-20'>
+      <div className='w-full mt-5'>
         <Carousel
           autoPlay
           infiniteLoop
@@ -51,7 +45,6 @@ function MainContent() {
           <div className="flex justify-center">
             <img src="/testimonial1.png" alt="Image 3" className="object-contain w-60 h-64"/>
           </div>
-          {/* Add more images as needed */}
         </Carousel>
       </div>
     </div>

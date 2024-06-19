@@ -5,10 +5,8 @@ import Image from 'next/image'
 
 function Header() {
   return (
-    <div>
-        <div className='flex items-center justify-between
-        p-5 shadow-sm
-        '>
+   
+        <div className='flex items-center justify-between p-1 shadow-sm'>
             <Image src='/logo.svg' width={200} height={200} alt='logo'
                 className='w-[100px] md:w-[100px]'
             />
@@ -21,10 +19,9 @@ function Header() {
             <div className='flex gap-5'>
               <LoginLink> <Button variant="ghost">Login</Button></LoginLink> 
                <RegisterLink><Button>Get Started</Button></RegisterLink> 
-
             </div>
         </div>
-    </div>
+
   )
 }
 
